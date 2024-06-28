@@ -1,9 +1,15 @@
 body {
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    text-shadow: none;
 }
 
 .container {
@@ -17,9 +23,8 @@ header {
     background: linear-gradient(to left, #3a7bd5, #3a6073);
     color: #fff;
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     min-height: 100px;
-
 }
 
 header h1 {
@@ -27,11 +32,10 @@ header h1 {
     padding: 0;
     line-height: 1.2;
     font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 header nav {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 header nav ul {
@@ -58,36 +62,25 @@ header nav ul li a:hover {
     color: #ffcc00;
 }
 
-.showcase {
-    min-height: 400px;
-    background-color: #e4e4e4;
-    text-align: center;
-    color: #333;
-}
-
-.showcase h1 {
-    margin-top: 100px;
-    font-size: 55px;
-    margin-bottom: 10px;
-}
-
-.showcase p {
-    font-size: 20px;
-}
-
 .main {
     padding: 20px;
     background: #fff;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
-.contact-info {
+.main section {
     margin-top: 20px;
     text-align: left;
 }
 
-.contact-info h2 {
+.main section h2 {
     font-size: 2em;
     margin-bottom: 10px;
+}
+
+.main section p {
+    font-size: 1.2em;
 }
 
 .contact-info p {
@@ -102,4 +95,24 @@ header nav ul li a:hover {
 
 .contact-info a:hover {
     color: #ffcc00;
+}
+
+.divider {
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1em;
+    color: #888;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
 }
