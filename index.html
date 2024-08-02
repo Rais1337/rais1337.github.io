@@ -7,51 +7,123 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="icon" type="image/x-icon" href="assets/img/logo.ico">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <style>
+        .lang-content { display: none; }
+        .lang-content.active { display: block; }
+    </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Г.О i3 (MrRais)</h1>
+            <h1>Г.О i3</h1>
             <nav>
                 <ul>
-                    <li><a href="">Русский 🇷🇺</a></li>
-                    <li><a href="">English 🇬🇧</a></li>
-                    <li><a href="">Українська 🇺🇦</a></li>
+                    <li><a href="#" onclick="switchLanguage('en')">English</a></li>
+                    <li><a href="#" onclick="switchLanguage('ru')">Русский</a></li>
+                    <li><a href="#" onclick="switchLanguage('uk')">Українська</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <div class="main container">
         <section id="about">
-            <h2>👤 Обо мне</h2>
-            <div class="divider"></div>
-            <p>- Константин</p>
-            <p>- Январь 2006, 18 лет</p>
-            <p>- Украина, Киев</p>
-            <p>- 3D Художник; Левел-дизайнер; Программист C#, C++, Lua, HTML&CSS (умею поприветствовать мир)</p>
-            <p>- Ударно-десантный вертолёт Ми-24П с подвесным вооружением ПТУР 9К113 «Штурм-В»</p>
+            <div class="lang-content lang-en">
+                <h2>👤 About Me</h2>
+                <div class="divider"></div>
+                <p>- Konstantin</p>
+                <p>- January 2006, 18 years old</p>
+                <p>- Ukraine, Kyiv</p>
+                <p>- Artist & Level Designer; Frontend Developer; C#, C++, Lua Programmer</p>
+                <p>- Mil Mi-24P Attack Helicopter with 9K113 "Shturm-V" ATGM</p>
+            </div>
+            <div class="lang-content lang-ru active">
+                <h2>👤 Обо мне</h2>
+                <div class="divider"></div>
+                <p>- Константин</p>
+                <p>- Январь 2006, 18 лет</p>
+                <p>- Украина, Киев</p>
+                <p>- Художник & Дизайнер уровней; Frontend-разработчик; Программист C#, C++, Lua</p>
+                <p>- Ударно-десантный вертолёт Ми-24П с подвесным вооружением ПТУР 9К113 «Штурм-В»</p>
+            </div>
+            <div class="lang-content lang-uk">
+                <h2>👤 Про мене</h2>
+                <div class="divider"></div>
+                <p>- Костянтин</p>
+                <p>- Січень 2006, 18 років</p>
+                <p>- Україна, Київ</p>
+                <p>- Художник & Дизайнер рівнів; Frontend-розробник; Програміст C#, C++, Lua</p>
+                <p>- Ударно-десантний вертоліт Мі-24П з підвісним озброєнням ПТКР 9К113 «Штурм-В»</p>
+            </div>
         </section>
         <section id="projects">
-            <h2>💼 Проекты</h2>
-            <div class="divider"></div>
-            <h3>Раздел будет дополняться и видоизменяться</h3>
-            <p>На данный момент в закрытой разработке находиться несколько проектов разной степени масштабности, которые я разрабатываю со своей командой. Основной из них - RP проект в российском антураже. Все игры разрабатываются на движке s&box (перспективный внебрачный ребёнок Source 2 и Unity). В планах имеется реализация PVP шутера с элементами выживания во вселенной SCP, в случае успешного запуска RP проекта.</p> 
-            <p>Поскольку я утконос, ни один из моих прошлых локальных проектов не был доведён до конца. Однако, возможно, я исправлю эту ситуацию, и в будущем снизу будет список про каждый мой проект. Или хотя бы заверну их в нормальную обёртку.</p>
-            <p>Все мои нынешние локальные проекты, которые (вроде как) активно разрабатываются, можно найти на моей странице <a href="https://github.com/Rais1337">GitHub</a>.</p>
-            <p>P.S. Наша команда Intertape нуждается в новых людях всех мастей. Если тебя заинтересовала разработка наших проектов (RP, SCP, minigames), и у тебя есть должные навыки - смело пиши мне в ЛС!</p>
-            <p>P.P.S. В будущем сайт будет иметь локализацию на английском и украинском языке, а пока что <a href="https://translate.google.com/">Google Перекладач</a> к вашим услугам.</p>
+            <div class="lang-content lang-en">
+                <h2>💼 Portfolio</h2>
+                <div class="divider"></div>
+                <h3>Attention, construction work is underway on the construction of this section!</h3>
+                <p>Since I am a platypus, none of my past local projects have been completed. Not that it was my fault, but it doesn't matter. Perhaps I will fix this situation, and in the future it will be about each of my past projects from below. Or at least wrap the existing one in a normal wrapper.</p>
+                <h3>At the moment I am working on such projects:</h3>
+                <p>1</p>
+                <br>
+                <p>Also, my team and I are conducting a closed development of a game project, but we'll talk about it later...</p>
+            </div>
+            <div class="lang-content lang-ru active">
+                <h2>💼 Портфолио</h2>
+                <div class="divider"></div>
+                <h3>Внимание, ведутся строительные работы по возведению данного раздела!</h3>
+                <p>Поскольку я утконос, ни один из моих прошлых локальных проектов не был доведён до конца. Не то что бы это была моя вина, но да неважно. Возможно, я исправлю эту ситуацию, и в будущем снизу будет про каждый из моих прошлых проектов. Или хотя бы заверну существующее в нормальную обёртку.</p>
+                <h3>На данный момент я работаю над такими проектами:</h3>
+                <p>1</p>
+                <br>
+                <p>Так же, я со своей командой веду закрытую разработку игрового проекта, но об этом как-нибудь потом...</p>
+            </div>
+            <div class="lang-content lang-uk">
+                <h2>💼 Портфоліо</h2>
+                <div class="divider"></div>
+                <h3>Увага, ведуться будівельні роботи по зведенню даного розділу!</h3>
+                <p>Оскільки я качкодзьоб, жоден з моїх минулих локальних проектів не був завершений. Не те що б це була моя вина, але неважливо. Можливо, я виправлю цю ситуацію, і в майбутньому знизу буде про кожен з моїх минулих проектів. Або хоча б загорну існуюче в нормальну обгортку.</p>
+                <h3>На даний момент я працюю над такими проектами:</h3>
+                <p>1</p>
+                <br>
+                <p>Також, я зі своєю командою веду закриту розробку ігрового проекту, але про це як-небудь потім...</p>
+            </div>
         </section>
         <section id="contact" class="contact-info">
-            <h2>📧 Контакты</h2>
-            <div class="divider"></div>
-            <p>Telegram: <a href="https://t.me/mr_rais_i3">ТЫК</a></p>
-            <p>Discord: <a href="">mr.rais</a> (old: Mr.RAIS#4999)</p>
-            <p>Steam: <a href="https://steamcommunity.com/id/civilprotectionsec/">ТЫК</a></p>
-            <p>YouTube: <a href="https://www.youtube.com/channel/UCNcattR4opCp-PUI1l6QWaw">ТЫК</a></p>
-            <p>Instagram: <a href="https://steamcommunity.com/id/civilprotectionsec/screenshots/">ТЫК</a></p>
-            <p>ArtStation: <a href="https://www.artstation.com/user-4514757">ТЫК</a></p>
-            <p>GitHub: <a href="https://github.com/Rais1337">ТЫК</a></p>
-            <p>Репозиторий сайта на GitHub: <a href="https://github.com/Rais1337/rais1337.github.io">ТЫК</a></p>
+            <div class="lang-content lang-en">
+                <h2>📧 Contacts</h2>
+                <div class="divider"></div>
+                <p>Telegram: <a href="https://t.me/mr_rais_i3">Click</a></p>
+                <p>Discord: <a href="#">mr.rais</a></p>
+                <p>Steam: <a href="https://steamcommunity.com/id/civilprotectionsec/">Click</a></p>
+                <p>YouTube: <a href="https://www.youtube.com/channel/UCNcattR4opCp-PUI1l6QWaw">Click</a></p>
+                <p>Instagram: <a href="https://steamcommunity.com/id/civilprotectionsec/screenshots/">Click</a></p>
+                <p>ArtStation: <a href="https://www.artstation.com/user-4514757">Click</a></p>
+                <p>GitHub: <a href="https://github.com/Rais1337">Click</a></p>
+                <p>Website repository on GitHub: <a href="https://github.com/Rais1337/rais1337.github.io">Click</a></p>
+            </div>
+            <div class="lang-content lang-ru active">
+                <h2>📧 Контакты</h2>
+                <div class="divider"></div>
+                <p>Telegram: <a href="https://t.me/mr_rais_i3">ТЫК</a></p>
+                <p>Discord: <a href="#">mr.rais</a></p>
+                <p>Steam: <a href="https://steamcommunity.com/id/civilprotectionsec/">ТЫК</a></p>
+                <p>YouTube: <a href="https://www.youtube.com/channel/UCNcattR4opCp-PUI1l6QWaw">ТЫК</a></p>
+                <p>Instagram: <a href="https://steamcommunity.com/id/civilprotectionsec/screenshots/">ТЫК</a></p>
+                <p>ArtStation: <a href="https://www.artstation.com/user-4514757">ТЫК</a></p>
+                <p>GitHub: <a href="https://github.com/Rais1337">ТЫК</a></p>
+                <p>Репозиторий сайта на GitHub: <a href="https://github.com/Rais1337/rais1337.github.io">ТЫК</a></p>
+            </div>
+            <div class="lang-content lang-uk">
+                <h2>📧 Контакти</h2>
+                <div class="divider"></div>
+                <p>Telegram: <a href="https://t.me/mr_rais_i3">ТИЦЬ</a></p>
+                <p>Discord: <a href="#">mr.rais</a></p>
+                <p>Steam: <a href="https://steamcommunity.com/id/civilprotectionsec/">ТИЦЬ</a></p>
+                <p>YouTube: <a href="https://www.youtube.com/channel/UCNcattR4opCp-PUI1l6QWaw">ТИЦЬ</a></p>
+                <p>Instagram: <a href="https://steamcommunity.com/id/civilprotectionsec/screenshots/">ТИЦЬ</a></p>
+                <p>ArtStation: <a href="https://www.artstation.com/user-4514757">ТИЦЬ</a></p>
+                <p>GitHub: <a href="https://github.com/Rais1337">ТИЦЬ</a></p>
+                <p>Репозиторій сайту на GitHub: <a href="https://github.com/Rais1337/rais1337.github.io">ТИЦЬ</a></p>
+            </div>
         </section>
     </div>
     <footer>
