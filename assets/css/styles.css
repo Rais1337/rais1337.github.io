@@ -5,7 +5,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #4b6cb7, #182848);
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
@@ -27,4 +29,16 @@ h1 {
 p {
     margin: 10px 0 0;
     font-size: 1.2em;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
